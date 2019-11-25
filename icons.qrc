@@ -11,5 +11,6 @@
         <file>icons\twitter.png</file>
         <file>icons\whatsapp.png</file>
         <file>icons\yahoomail.png</file>
+        <file>icons\boomplayer.png</file>
     </qresource>
 </RCC>

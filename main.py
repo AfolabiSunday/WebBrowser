@@ -7,7 +7,7 @@ from PyQt5.uic import loadUiType
 import time
 
 page , _ = loadUiType('web.ui')
-ChoiceUrl ,_ = loadUiType("otherUrl.ui")
+
 
 
 class MainApp(QMainWindow, page):
@@ -20,6 +20,8 @@ class MainApp(QMainWindow, page):
         self.setWindowTitle('Welcome Page')
         self.url = ""
         self.btn1 = ""
+        self.setFixedSize(794, 591)
+
         
 
 
@@ -35,6 +37,7 @@ class MainApp(QMainWindow, page):
         self.pushButton_9.clicked.connect(lambda: self.whichbtn(self.pushButton_9))
         self.pushButton_11.clicked.connect(lambda: self.whichbtn(self.pushButton_11))
         self.pushButton_10.clicked.connect(self.othernewUrl)
+        self.pushButton_12.clicked.connect(lambda: self.whichbtn(self.pushButton_12))
 
     def whichbtn(self, b):
         if b.text() == 'Linkedin':
@@ -46,6 +49,12 @@ class MainApp(QMainWindow, page):
             self.url = "https://web.facebook.com/"
             self.linkedin()
             self.web.setWindowTitle(b.text())
+            
+        elif b.text() == 'BoomPlay':
+            self.url = "https://www.boomplaymusic.com/BoomPlayer/#/webitem/music"
+            self.linkedin()
+            self.web.setWindowTitle(b.text())
+            
 
         elif b.text() == "YahooMail":
             self.url = "https://mail.yahoo.com/"
@@ -107,11 +116,6 @@ class MainApp(QMainWindow, page):
         self.web.show()
         self.groupBox.setEnabled(False)
         self.statusBar().showMessage(self.url)
-
-
-
-
-
 
 
 

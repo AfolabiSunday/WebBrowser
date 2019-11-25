@@ -71,6 +71,7 @@ font: 75 10pt &quot;Verdana&quot;;
 color: rgb(255, 255, 255);
 border-radius: 12px;
 
+
 </string>
      </property>
      <property name="text">
@@ -402,7 +403,7 @@ border-radius: 12px;
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>330</y>
+      <y>350</y>
       <width>181</width>
       <height>28</height>
      </rect>
@@ -454,6 +455,38 @@ border-radius: 12px;
     <property name="icon">
      <iconset resource="icons.qrc">
       <normaloff>:/icons/gmail.png</normaloff>:/icons/gmail.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>32</width>
+      <height>32</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_12">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>320</y>
+      <width>181</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(54, 99, 234);
+color: rgb(54, 99, 234);
+background-color: rgb(255, 255, 255);
+font: 75 10pt &quot;Verdana&quot;;
+border-radius: 12px;
+
+</string>
+    </property>
+    <property name="text">
+     <string>BoomPlay</string>
+    </property>
+    <property name="icon">
+     <iconset resource="icons.qrc">
+      <normaloff>:/icons/boomplayer.png</normaloff>:/icons/boomplayer.png</iconset>
     </property>
     <property name="iconSize">
      <size>
